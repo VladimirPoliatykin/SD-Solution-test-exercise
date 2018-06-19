@@ -1,0 +1,163 @@
+ul,ol{
+	margin: 0;
+	padding: 0;
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #5c87b2;
+}
+.wrapper{
+	margin: 40px;
+	border-radius: 5px;
+	padding: 65px;
+	height: auto;
+	background-color: #fff;
+}
+
+.input-wrapper, .list-wrapper, body{
+	position: relative;
+	
+}
+
+.xml-wrapper{
+	position: absolute;
+	width: 600px;
+	height: 100%;
+	padding: 30px;
+	text-align: center;
+	background-color: #fff;
+	z-index: 999;
+	left: calc(50% - 300px);
+	border-radius: 4px;
+	height: auto;
+	display: none;
+}
+.xml-wrapper #close{
+	display: block;
+	margin: 0 auto;
+}
+
+
+.input-wrapper, .list-wrapper{
+	width: 100%;
+}
+.input-wrapper{
+	width: calc(100% - 3px);
+	margin-top: 50px;
+	
+}
+	
+.input-signature, .list-signature{
+	position: absolute;
+}
+
+.input-wrapper > #pairs-field, .list-wrapper > ul {
+	width: 70%;
+}
+.input-wrapper > .add{
+	margin-left: 50px;
+
+}
+
+.input-signature{
+	bottom: 100%;
+	left: 0;
+}
+
+
+.list-wrapper{
+	margin-top: 50px;
+	width: 100%;
+	
+}
+
+.list-wrapper > .pairs-container{
+	display: inline-block;
+	border: 1px solid black;
+	min-height: 350px;
+	float: left;
+	padding: 20px 5px;
+	list-style-type: none;
+}
+
+.list-signature{
+	bottom: 100%;
+	left: 0;
+}
+.buttons-wrapper{
+	display: inline-block;
+	width: 20%;
+	min-height: 350px;
+	
+
+}
+
+button[data-type = "button"]{
+	display: block;
+	margin: 0;
+	margin-left: 50px;
+	margin-bottom: 25px;
+	border-radius: 0px;
+}
+#sort-name{
+	margin-bottom: 15px;
+}
+
+
+/*classes for JS*/
+
+.toggle-select{
+	background: rgba(65,93,255,.5);
+}
+
+.visible{
+	display: block;
+	transition: all 0.5s;
+}
+
+.unvisible{
+	display: none;
+	
+}
+
+/*//media queries*/
+
+
+@media (max-width: 767.98px) {
+	body{
+		
+		overflow-x: hidden;
+	}
+	.input-wrapper{
+		width: 100%;
+	}
+	.input-wrapper > #pairs-field{
+		width: 100%;
+		padding: 10px;
+	}
+	.input-wrapper > .add{
+		margin: 5px 0;
+		width: 100%;
+		padding: 10px;
+	}
+	.list-wrapper > .pairs-container{
+		width: 100%;
+	}
+	.buttons-wrapper{
+		width: 100%;
+		height: auto;
+		min-height: 200px;
+	}
+	button[data-type = "button"],#sort-name{
+		width: 100%;
+		padding: 10px;
+		margin: 5px 0;
+	}
+	.xml-wrapper{
+		width: 100%;
+		left: 0;
+	}
+
+}
